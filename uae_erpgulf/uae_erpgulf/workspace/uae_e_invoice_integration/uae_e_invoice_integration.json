@@ -1,7 +1,7 @@
 {
  "app": "erpnext",
  "charts": [],
- "content": "[{\"id\":\"lHwMOZy6Wb\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Detailed Dashboard\",\"col\":3}},{\"id\":\"b-O49yl_Us\",\"type\":\"card\",\"data\":{\"card_name\":\"UAE E-Invoice Status Reports\",\"col\":5}},{\"id\":\"UOgFJ3vHbK\",\"type\":\"card\",\"data\":{\"card_name\":\"Integration\",\"col\":4}},{\"id\":\"-yhGI62-4a\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"New Purchase Invoices\",\"col\":4}},{\"id\":\"aCCIvTph_u\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"New Sales Invoices\",\"col\":4}}]",
+ "content": "[{\"id\":\"Nxhp0r91R1\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>UAE E-Invoicing Dashboard &amp; Reports</b></span>\",\"col\":12}},{\"id\":\"lHwMOZy6Wb\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Detailed Dashboard\",\"col\":3}},{\"id\":\"1HX0Pt085v\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"New Sales Invoice\",\"col\":4}},{\"id\":\"_JZBBtg-WX\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"New Purchase Invoice\",\"col\":4}},{\"id\":\"b-O49yl_Us\",\"type\":\"card\",\"data\":{\"card_name\":\"UAE E-Invoice Status Reports\",\"col\":5}},{\"id\":\"UOgFJ3vHbK\",\"type\":\"card\",\"data\":{\"card_name\":\"Integration\",\"col\":4}}]",
  "creation": "2026-04-12 18:09:21.611339",
  "custom_blocks": [],
  "docstatus": 0,
@@ -15,6 +15,25 @@
  "label": "UAE E-Invoice Integration",
  "link_type": "DocType",
  "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Integration",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "UAE E-Invoice Setup- Company",
+   "link_count": 0,
+   "link_to": "Company",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
   {
    "hidden": 0,
    "is_query_report": 0,
@@ -36,36 +55,16 @@
   },
   {
    "hidden": 0,
-   "is_query_report": 0,
+   "is_query_report": 1,
    "label": "UAE E-Invoice Sales Status Report",
    "link_count": 0,
    "link_to": "UAE E-Invoice Sales Status Report",
    "link_type": "Report",
    "onboard": 0,
-   "report_ref_doctype": "Sales Invoice",
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Integration",
-   "link_count": 1,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "UAE E-Invoice Setup- Company",
-   "link_count": 0,
-   "link_to": "Company",
-   "link_type": "DocType",
-   "onboard": 0,
    "type": "Link"
   }
  ],
- "modified": "2026-04-17 20:24:53.231694",
+ "modified": "2026-05-06 10:41:19.697671",
  "modified_by": "Administrator",
  "module": "uae_erpgulf",
  "name": "UAE E-Invoice Integration",
@@ -76,12 +75,12 @@
  "quick_lists": [
   {
    "document_type": "Sales Invoice",
-   "label": "New Sales Invoices",
+   "label": "New Sales Invoice",
    "quick_list_filter": "[[\"Sales Invoice\",\"custom_reporting_status\",\"like\",\"%reported%\"]]"
   },
   {
    "document_type": "Purchase Invoice",
-   "label": "New Purchase Invoices",
+   "label": "New Purchase Invoice",
    "quick_list_filter": "[[\"Purchase Invoice\",\"custom_reporting_status\",\"like\",\"%reported%\"]]"
   }
  ],
