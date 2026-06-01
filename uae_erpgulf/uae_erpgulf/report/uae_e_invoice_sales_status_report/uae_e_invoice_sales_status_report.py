@@ -111,18 +111,19 @@ def get_data(filters):
     # ======================
     where_clause = " AND ".join(conditions) if conditions else "1=1"
 
-    query = f"""
-        SELECT
-            name,
-            customer_name,
-            posting_date,
-            grand_total,
-            custom_reporting_status,
-            custom_uae_einvoice_status,
-            docstatus
-        FROM `tabSales Invoice`
-        WHERE {where_clause}
-        ORDER BY posting_date DESC
+    query = """
+    SELECT
+        name,
+        customer_name,
+        posting_date,
+        grand_total,
+        custom_reporting_status,
+        custom_uae_einvoice_status,
+        docstatus
+    FROM `tabSales Invoice`
+    WHERE """ + where_clause + """
+    ORDER BY posting_date DESC
     """
+
 
     return frappe.db.sql(query, params, as_dict=True)
