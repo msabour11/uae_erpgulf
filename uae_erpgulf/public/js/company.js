@@ -28,7 +28,7 @@ frappe.ui.form.on("Company", {
     custom_get_participant_details: function (frm) {
 
         if (!frm.doc.custom_participant_id) {
-            frappe.msgprint("Please enter Participant ID");
+            frappe.msgprint(_("Please enter Participant ID"));
             return;
         }
 
@@ -60,7 +60,7 @@ frappe.ui.form.on("Company", {
     custom_get_access_token: function (frm) {
 
         if (!frm.doc.custom_client_id || !frm.doc.custom_client_secret) {
-            frappe.msgprint("Please set Client ID and Client Secret");
+            frappe.msgprint(_("Please set Client ID and Client Secret"));
             return;
         }
 
