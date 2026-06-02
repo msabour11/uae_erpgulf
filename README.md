@@ -134,7 +134,7 @@ Store token securely
 Reuse token until expiry
 Regenerate token when expired
 
-![alt text](image-2.png)
+![](uae_erpgulf/uae_erpgulf/screenshots/image-2.png)
 
 ### Fetch Participant Details
 
@@ -161,7 +161,7 @@ Invoice is sent to the configured API provider
 API provider forwards invoice data to the FTA
 Response is received and stored in ERPNext
 
-![alt text](image-3.png)
+![](uae_erpgulf/uae_erpgulf/screenshots/image-3.png)
 
 ## flowchart TD
     A[Create Sales Invoice] --> B[Validate Configuration]
@@ -172,9 +172,8 @@ Response is received and stored in ERPNext
     F --> G[Forward to FTA]
     G --> H[Store Response in ERPNext]
 `
-![alt text](image-4.png)
-
-![alt text](image.png)
+![](uae_erpgulf/uae_erpgulf/screenshots/image-4.png)
+![](uae_erpgulf/uae_erpgulf/screenshots/image.png)
 
 
 ## Webhooks
@@ -191,8 +190,8 @@ Supported webhook events include:
 
 Webhook responses can be used to update invoice status inside ERPNext.
 
-![alt text](image-5.png)
-![alt text](image-1.png)
+![](uae_erpgulf/uae_erpgulf/screenshots/image-5.png)
+![](uae_erpgulf/uae_erpgulf/screenshots/image-1.png)
 
 
 ## Output Formats
@@ -320,5 +319,8 @@ For implementation, customization, or support, please contact the project mainta
 
 
 ### Contact us for Support
+
+
 Email: support@erpgulf.com
+
 Author: Farook K — https://medium.com/nothing-big
