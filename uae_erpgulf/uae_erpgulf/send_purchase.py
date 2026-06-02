@@ -87,6 +87,7 @@ def send_invoice_to_flick(doc, method=None):
             f"<b>Response:</b><br>{response_data}"
         )
         return response.status_code, response_data
+        
     except Exception:
         frappe.log_error(frappe.get_traceback(), "Flick API Error")
         frappe.throw(_("Error while sending invoice to Flick API."))
