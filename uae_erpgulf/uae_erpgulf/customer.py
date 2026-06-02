@@ -20,7 +20,6 @@ def custom_lookup_peppol_id_of_participant(company:str,peppol_id:str):
 
         if response.status_code == 200:
             return response.json()
-            
         else:
             frappe.throw(f"API Error: {response.text}")
 
